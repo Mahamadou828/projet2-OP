@@ -4,12 +4,20 @@ body
     border: 2px solid #3E3E3E;
     border-radius: 10px;
     margin: 0;
+    color: #3E3E3E;
+    font-family: 'Source Sans Pro', sans-serif;
+    word-wrap: break-word ;
+}
+
+h1 , h2
+{
+    margin: 0px;
 }
 
 #image img
 {
-    width: 250px;
-    height: 250px;
+    width: 75%;
+    height: 75%;
     border-radius: 50%;
 }
 
@@ -23,7 +31,9 @@ body
 #aboutMe
 {
     width: 30%;
-    background: #DB2D2D;
+    background: #00e6e6;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 #professionnel
@@ -36,9 +46,9 @@ body
 #aboutMe .title
 {
     width: 100%;
-    background-color: rgb(75, 74, 74);
+    background-color: #000;
     text-align: center;
-    color: #DB2D2D;
+    color: #00e6e6;
 }
 
 #contact p span
@@ -49,8 +59,53 @@ body
 
 #aProposDeMoi p 
 {
-    margin: 30px 30px 150px 30px;
+    margin: 30px 30px 50px 30px;
+    
 }
+
+#loisir h1
+{
+    margin-bottom: 20px;
+}
+
+#loisir div 
+{
+    display: flex;
+    justify-content: row wrap;
+    align-items: stretch;
+    margin: 0 30px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 1280px)
+{
+    #loisir div 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 30px;
+    word-wrap: break-word;
+}
+#loisir div i
+{
+    font-size: 45px;
+    width: 30%;
+    margin: 15px auto;
+}
+}
+
+@media screen and (min-width: 1280px)
+{
+#loisir div i
+{
+    font-size: 45px;
+    width: 30%;
+    margin: 0 15px;
+}
+}
+
+
 
 #professionnel .title span
 {
@@ -59,13 +114,17 @@ body
 
 #professionnel .title
 {
-    margin: 50px 0px 5px 0;
+    margin: 50px 0px 50px 0;
 }
 
-#professionnel h2
+#professionnel .title h1 
 {
-    margin-top: 0px;
-    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+#professionnel .title h2 
+{
+    font-size: 20px;
 }
 
 .yellowDivider
@@ -79,14 +138,38 @@ body
 .content
 {
     display: flex;
+    margin: 20px 0 ;
 }
 
 .content ul
 {
-    width: 25%;
+    width: 40%;
+    padding-left: 20px;
 }
 
 .content div
 {
-    color: #3E3E3E;
+    width: 60%;
+}
+
+.head
+{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.head span
+{
+    font-size: 28px;
+    margin: 5px 20px 0px 0px;
+}
+
+.content h1 
+{
+    font-size: 25px;
+}
+
+.content h2
+{
+    font-size: 20px;
 }
