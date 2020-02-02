@@ -49,6 +49,7 @@ h1 , h2
     background-color: #000;
     text-align: center;
     color: #00e6e6;
+    font-size: 25px;
 }
 
 #contact p span
@@ -63,7 +64,7 @@ h1 , h2
     
 }
 
-#loisir h1
+#loisir header
 {
     margin-bottom: 20px;
 }
@@ -71,7 +72,6 @@ h1 , h2
 #loisir div 
 {
     display: flex;
-    justify-content: row wrap;
     align-items: stretch;
     margin: 0 30px;
     word-wrap: break-word;
