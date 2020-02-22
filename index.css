@@ -1,12 +1,112 @@
-body
+
+@media all and (min-width: 600px) and (max-width: 1366px)
 {
-    display: flex ; 
-    border: 2px solid #3E3E3E;
-    border-radius: 10px;
-    margin: 0;
-    color: #3E3E3E;
-    font-family: 'Source Sans Pro', sans-serif;
-    word-wrap: break-word ;
+    
+    .presentation
+    {
+        width: 30%;
+        margin-right: 75px;
+        background-color: #00e6e6;
+    }
+
+    body
+    {
+        display: flex ; 
+        border: 2px solid #3E3E3E;
+        border-radius: 10px;
+        margin: 0;
+        color: #3E3E3E;
+        font-family: 'Source Sans Pro', sans-serif;
+        word-wrap: break-word ;
+    }
+    #loisir i
+    {
+        text-align: center;
+        margin: 0 30px 20px 30px;
+    }
+
+    
+    .information 
+    {
+        width: 70%;
+    }
+
+    .image , #aboutMe
+    {
+        background: #00e6e6;
+    }
+
+    #aboutMe .title
+    {
+        background-color: #000;
+        color: #00e6e6 ;
+    }
+
+}
+
+@media all and (min-width: 150px) and (max-width: 599px)
+{
+    body
+    {
+        border: 2px solid #3E3E3E;
+        border-radius: 10px;
+        margin: 0;
+        color: #3E3E3E;
+        font-family: 'Source Sans Pro', sans-serif;
+        word-wrap: break-word ;
+    }
+
+    #loisir i
+    {
+        font-size: 40px;
+        margin: 0 auto 15px auto;
+    }
+
+    .presentation 
+    {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .presentation, #aboutMe 
+    {
+        background-color: #DB2D2D ;
+    }
+
+    .image 
+    {
+        background-color: #DB2D2D ;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    #aboutMe .title
+    {
+        background-color: #3E3E3E ;
+        color: #DB2D2D ;
+    }
+
+    .information 
+    {
+        padding: 10px;
+    }
+
+    #loisir div 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content 
+    {
+        flex-direction: column;
+    }
+
+    .content ul , .content article 
+    {
+        margin: 0 auto;
+    }
 }
 
 h1 , h2
@@ -14,41 +114,30 @@ h1 , h2
     margin: 0px;
 }
 
-#image img
+.image 
+{
+    padding-top: 25px;
+    border-top-left-radius: 10px;
+    text-align: center;
+}
+
+.image img
 {
     width: 75%;
     height: 75%;
     border-radius: 50%;
 }
 
-#image
-{
-    width: 100%;
-    text-align: center;
-    margin: 25px 0;
-}
-
 #aboutMe
 {
-    width: 30%;
-    background: #00e6e6;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-#professionnel
-{
-    width: 70%;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 #aboutMe .title
 {
     width: 100%;
-    background-color: #000;
     text-align: center;
-    color: #00e6e6;
     font-size: 25px;
 }
 
@@ -64,52 +153,34 @@ h1 , h2
     
 }
 
-#loisir header
+#loisir h2
 {
     margin-bottom: 20px;
 }
 
-#loisir div 
+#loisir i 
 {
-    display: flex;
-    align-items: stretch;
-    margin: 0 30px;
-    word-wrap: break-word;
+    font-size: 50px;
 }
 
-@media screen and (max-width: 1280px)
+.information .title
 {
-    #loisir div 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    margin: 0 30px;
-    word-wrap: break-word;
-}
-#loisir div i
-{
-    font-size: 45px;
-    width: 30%;
-    margin: 15px auto;
-}
+    margin-top: 50px;
 }
 
-@media screen and (min-width: 1280px)
-{
-#loisir div i
-{
-    font-size: 45px;
-    width: 30%;
-    margin: 0 15px;
-}
-}
-
-
-
-#professionnel .title span
+.information  .title span
 {
     color: #DB2D2D;
+}
+
+.information .title h2 u 
+{
+    text-decoration: #DB2D2D underline;
+}
+
+#professionnel 
+{
+    padding-top: 50px;
 }
 
 #professionnel .title
@@ -125,6 +196,11 @@ h1 , h2
 #professionnel .title h2 
 {
     font-size: 20px;
+}
+
+#professionnel i 
+{
+    color: #DB2D2D;
 }
 
 .yellowDivider
@@ -147,7 +223,7 @@ h1 , h2
     padding-left: 20px;
 }
 
-.content div
+.content article
 {
     width: 60%;
 }
@@ -173,3 +249,4 @@ h1 , h2
 {
     font-size: 20px;
 }
+
